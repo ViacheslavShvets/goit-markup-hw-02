@@ -1,3 +1,29 @@
-body
- {background-color: rgb(255, 255, 255);}
- h1 {color: brown;}
+body{
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+}
+/* WebStudio */
+.logo {color: black;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;}
+.half-logo {color: #2196F3;
+}
+/* section-hero */
+.section-hero {
+    background: #2F303A;}
+
+ h1 {
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+footer {
+    background: #2F303A;
+    }
+    a {color: #FFFFFF;}
+    
