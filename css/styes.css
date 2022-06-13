@@ -1,29 +1,82 @@
-body{
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-}
-/* WebStudio */
-.logo {color: black;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;}
-.half-logo {color: #2196F3;
-}
-/* section-hero */
-.section-hero {
-    background: #2F303A;}
-
- h1 {
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-footer {
-    background: #2F303A;
-    }
-    a {color: #FFFFFF;}
+:root{
+    --tertiary-font:"Oleo Script";
+    --secondary-font:"Roboto";
+    --main-font:"Raleway";
+    /* text colors */
+    --accent-txt-cl: #2196F3;
+    --dark-txt-cl: #212121;
     
+}
+/* font-family: 'Oleo Script', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+/* логотип */
+.header-logo{
+    font-family: 'Oleo Script', cursive;
+    font-weight: 400;
+    color: #000000;
+    font-size: 26px;
+    line-height: 31px;
+
+}
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #2196F3
+}
+/* наігація */
+.link{
+  text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+
+.header-link{
+    font-style : normal ;
+    font-weight : 500 ;
+    font-size : 14px ;
+    line-height : 16px ;
+    letter-spacing : 0.02em ;
+    color: var(--dark-txt-cl)
+}
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-txt-cl)
+}
+/* контакти */
+.header-cont{
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: var(--dark-txt-cl)
+}
+.header-cont:hover,
+.header-cont:focus{
+color: var(--accent-txt-cl)
+}
+/* section hero */
+.hero{
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    background-color: #2F303A;
+}
+.hero-title{
+    font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        /* or 136% */
+    
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+}
+
