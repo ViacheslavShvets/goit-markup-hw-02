@@ -1,7 +1,8 @@
 :root{
-    ---font:"Oleo Script";
-    --secondary-font:"Roboto";
-    --main-font:"Raleway";
+    --third-font:"Oleo Script";
+    --secondary-font:"Raleway";
+    --main-font:"Roboto";
+    
     /* text colors */
     --accent-txt-cl: #2196F3;
     --dark-txt-cl: #212121;
@@ -13,8 +14,6 @@
 
 }
 .body{
-font-family: 'Oleo Script', cursive;
-font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 }
 
@@ -23,21 +22,22 @@ font-family: 'Roboto', sans-serif;
 }
 
 .list {
-    list-style: none;}
-/* */
+    list-style: none;
+}
 
 .text {
-    font-family: var(--secondary-font)}
+    font-family: var(--main-font);
+}
 /* логотип */
 .header-logo{
-    font-family: var(--tertiary-font);
+    font-family: var(--third-font);
     font-weight: 400;
     color: #000000;
     font-size: 26px;
     line-height: 31px;
 }
 .logo{
-    font-family: 'Oleo Script', cursive;
+    font-family:var(--secondary-font);
     font-weight: 700;
     color: #2196F3
 }
@@ -56,7 +56,6 @@ font-family: 'Roboto', sans-serif;
 }
 /* контакти */
 .header-cont{
-        font-family: "Roboto";
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
@@ -67,15 +66,15 @@ font-family: 'Roboto', sans-serif;
 .header-cont:focus{
 color: var(--accent-txt-cl)
 }
-/* section hero */
+/* селція герой */
 .hero{
     background-color:var(--dark-bgr-cl);
 }
+/* h1 в герой */
 .hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-        /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -83,8 +82,8 @@ color: var(--accent-txt-cl)
 }
 /* кнопка в секції герой */
 .hero-button{
+font-family: inherit;
 color:var(--light-txt-cl);
-font-family:var(--secondary-font);
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -97,6 +96,18 @@ background-color:var(--accent-txt-cl);
 box-shadow: 0px 4px 4px rgba (0, 0, 0, 0.15);
 border-radius: 4px;
 }
+/* кнопки в портфоліо */
+.btn-filter{
+font-family: inherit;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.btn-filter: active;
 .hero-button:hover,
 .hero-button:focus{
     background: #188CE8;
@@ -105,30 +116,29 @@ border-radius: 4px;
 }
 
 .mein-title{
+    color: var(--dark-txt-cl);
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.33px;
+    line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--dark-txt-cl)
 }
 .upertitle{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-        /* or 171% */
     letter-spacing: 0.03em;
     color: var(--gray-txt-cl);
 }
 .action-title{
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: 0.03em;
-color: var(--dark-txt-cl);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 42px;
+   letter-spacing: 0.03em;
+   color: var(--dark-txt-cl);
 }
 .group{
 background-color:var(--gray-bgr-cl)
@@ -162,10 +172,38 @@ color: var(--dark-txt-cl)
 }
 
 .photo-list{
-color: #FFFFFF ;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 /* footer */
 .footer{
 background-color : var(--dark-txt-cl);
 }
-
+/* logo footer */
+.lower-logo{
+    font-family:var(--secondary-font);
+    color: #2196F3;
+}
+.footer-logo{
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    font-family: var(--third-font);
+    color: #FFFFFF;
+}
+.footer-addr{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.addr{
+font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
