@@ -160,5 +160,5 @@ color: var(--dark-txt-cl)
 .photo-list{}
 /* footer */
 .footer{
-background-color: var(--dark-txt-cl);
+background-color : var(--dark-txt-cl);
 }
