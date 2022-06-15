@@ -1,5 +1,5 @@
 :root{
-    --tertiary-font:"Oleo Script";
+    ---font:"Oleo Script";
     --secondary-font:"Roboto";
     --main-font:"Raleway";
     /* text colors */
@@ -9,35 +9,39 @@
     --gray-txt-cl:#757575;
     /* background-color */
     --gray-bgr-cl: #F5F4FA;
+    --dark-bgr-cl: #2F303A;
 
 }
-/* font-family: 'Oleo Script', cursive;
+.body{
+font-family: 'Oleo Script', cursive;
 font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
+font-family: 'Roboto', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;}
+/* */
 
 .text {
-    font-family: var(--secondary-font);}
+    font-family: var(--secondary-font)}
 /* логотип */
 .header-logo{
-    font-family: 'Oleo Script', cursive;
+    font-family: var(--tertiary-font);
     font-weight: 400;
     color: #000000;
     font-size: 26px;
     line-height: 31px;
-
 }
 .logo{
-    font-family: "Raleway", sans-serif;
+    font-family: 'Oleo Script', cursive;
     font-weight: 700;
     color: #2196F3
 }
 /* наігація */
-.link{
-  text-decoration: none;
-}
-.list {
-    list-style: none;
-}
 .header-link{
     font-style : normal ;
     font-weight : 500 ;
@@ -65,7 +69,7 @@ color: var(--accent-txt-cl)
 }
 /* section hero */
 .hero{
-    background-color: #2F303A;
+    background-color:var(--dark-bgr-cl);
 }
 .hero-title{
     font-weight: 900;
@@ -79,7 +83,7 @@ color: var(--accent-txt-cl)
 }
 /* кнопка в секції герой */
 .hero-button{
-color: #FFFFFF;
+color:var(--light-txt-cl);
 font-family:var(--secondary-font);
 font-style: normal;
 font-weight: 700;
@@ -157,8 +161,11 @@ color: var(--dark-txt-cl)
     color: var(--gray-txt-cl);
 }
 
-.photo-list{}
+.photo-list{
+color: #FFFFFF ;
+}
 /* footer */
 .footer{
 background-color : var(--dark-txt-cl);
 }
+
