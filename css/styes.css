@@ -11,6 +11,7 @@
     /* background-color */
     --gray-bgr-cl: #F5F4FA;
     --dark-bgr-cl: #2F303A;
+    --light-bgr-cl: #ffffff;
 
 }
 .body{
@@ -28,7 +29,7 @@ font-family: 'Roboto', sans-serif;
 .text {
     font-family: var(--main-font);
 }
-/* логотип */
+/* логотип в хедері */
 .header-logo{
     font-family: var(--third-font);
     font-weight: 400;
@@ -41,7 +42,8 @@ font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #2196F3
 }
-/* наігація */
+
+/* блок наігація в футері */
 .header-link{
     font-style : normal ;
     font-weight : 500 ;
@@ -54,7 +56,8 @@ font-family: 'Roboto', sans-serif;
 .header-link:focus {
     color: var(--accent-txt-cl)
 }
-/* контакти */
+
+/* секція контакти в футері */
 .header-cont{
         font-weight: 500;
         font-size: 14px;
@@ -66,11 +69,12 @@ font-family: 'Roboto', sans-serif;
 .header-cont:focus{
 color: var(--accent-txt-cl)
 }
-/* селція герой */
+
+/* сеrція герой */
 .hero{
     background-color:var(--dark-bgr-cl);
 }
-/* h1 в герой */
+/* заголовок в герой */
 .hero-title{
     font-weight: 900;
     font-size: 44px;
@@ -80,6 +84,7 @@ color: var(--accent-txt-cl)
     text-transform: uppercase;
     color: var(--light-txt-cl);
 }
+
 /* кнопка в секції герой */
 .hero-button{
 font-family: inherit;
@@ -96,28 +101,14 @@ background-color:var(--accent-txt-cl);
 box-shadow: 0px 4px 4px rgba (0, 0, 0, 0.15);
 border-radius: 4px;
 }
-/* кнопки в портфоліо */
-.btn-filter{
-font-family: inherit;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-}
-.btn-filter: active;
 .hero-button:hover,
-.hero-button:focus{
-    background: #188CE8;
+.hero-button:focus {
+    background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba (0, 0, 0, 0.15);
     border-radius: 4px;
 }
-
 .mein-title{
     color: var(--dark-txt-cl);
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -125,7 +116,6 @@ color: #212121;
     text-transform: uppercase;
 }
 .upertitle{
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -133,18 +123,18 @@ color: #212121;
     color: var(--gray-txt-cl);
 }
 .action-title{
-   font-style: normal;
    font-weight: 700;
    font-size: 36px;
    line-height: 42px;
    letter-spacing: 0.03em;
    color: var(--dark-txt-cl);
 }
+
+/* секція наша команда */
 .group{
 background-color:var(--gray-bgr-cl)
 }
 .group-title{
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -155,32 +145,30 @@ background-color:var(--gray-bgr-cl)
 font-weight: 500;
 font-size: 16px;
 line-height: 19px;
-    /* identical to box height */
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--dark-txt-cl)
 }
 .prof{
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-        /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--gray-txt-cl);
 }
-
 .photo-list{
-    background-color: #FFFFFF;
+    background-color:var(--light-txt-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
 /* footer */
 .footer{
 background-color : var(--dark-txt-cl);
 }
-/* logo footer */
+
+/* логотип у футері */
 .lower-logo{
     font-family:var(--secondary-font);
     color: #2196F3;
@@ -192,6 +180,7 @@ background-color : var(--dark-txt-cl);
     font-family: var(--third-font);
     color: #FFFFFF;
 }
+/* блок контактів у футері */
 .footer-addr{
     font-style: normal;
     font-weight: 400;
@@ -206,4 +195,42 @@ font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+.addr:hover,
+.addr:focus{
+color: var(--accent-txt-cl)
+}
+/* фільтра в портфоліо */
+.btn-filter {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-txt-cl);
+}
+.btn-filter:active {
+    background-color: var(--accent-txt-cl);
+}
+
+/* список проектів в портфоліо */
+.portfolio-projects{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--dark-txt-cl);
+}
+.projects-name{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color:var(--gray-txt-cl)
+}
+.project-list{
+background-color: var(--light-bgr-cl);
+border: 1px solid #EEEEEE;
 }
